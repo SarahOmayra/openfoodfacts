@@ -13,47 +13,64 @@
     <script type="text/javascript" src="src/jquery.autocomplete.min.js"></script>
 
 
-
-   <script>
-        $(document).ready(function() {
-            $('#sport').autocomplete({
-                serviceUrl: 'sport.php',
-                dataType: 'json'
-            });
-        });
-    </script>
 </head>
 <body>
-    <form class="form-inline" method="GET" action="sport.php">
-        <label for="sport">Choisis ton sport</label>
-        <input type="text" id="sport" />
-        <button type="submit" class="btn btn-default">Gros</button>
-    </form>
+
 <?php
-    if(isset($_GET['query'])) {
-        // Mot tapé par l'utilisateur
-        $q = htmlentities($_GET['query']);
 
-        // Connexion à la base de données
-        include 'header.php';
-        $bdd = mysqli_connect(SERVER, USER, PASS, DB);
+$codebarre=$_GET['id'];
+$url = 'https://fr.openfoodfacts.org/api/v0/product/'.$codebarre.'.json';
+$recup = file_get_contents($url);
+$json = json_decode($recup, true);
+$product = $json['product'];
 
-        // Requête SQL
-        $req = "SELECT sport FROM energiesport WHERE sport LIKE '". $q ."%' LIMIT 0, 10";
+echo $product['product_name'];
+echo $product['image_front_thumb_url'];
+echo $product['nutrition_grade_fr'];
+echo $product['nutriments']['energy_value'];
 
-        // Exécution de la requête SQL
-        $res = mysqli_query($bdd, $req);
 
-        // On parcourt les résultats de la requête SQL
-        while($data = mysqli_fetch_assoc($res)) {
-            // On ajoute les données dans un tableau
-            $suggestions['suggestions'][] = $data['sport'];
-        }
 
-        // On renvoie le données au format JSON pour le plugin
-        echo json_encode($suggestions);
+
+include 'connect.php';
+$bdd=mysqli_connect(SERVER,USER,PASS,DB);
+
+?>
+    <form method="POST" action="sport.php">
+        <label for="sport">Choisis ton sport</label>
+        <select class="form-control" name="sport" id="sport">
+            <?php
+            $sport = mysqli_query($bdd,"SELECT * FROM energiesport");
+            while ($data=mysqli_fetch_assoc($sport)) {
+                $choix = $data['sport'];
+                echo '<option value="'.$data['idenergiesport'].'">'.$choix.'</option>';
+            }
+            ?>
+        </select>
+        <input type="submit" value="Calcul" class="btn btn-primary btn-lg"/>
+    </form>
+
+
+<?php
+
+$calorieproduit=$product['nutriments']['energy_value'];
+if (isset($_POST['sport'])){
+    $res=mysqli_query($bdd,"SELECT calorie FROM energiesport where idenergiesport=".$_POST['sport']);
+    while ($data=mysqli_fetch_assoc($res)) {
+        $calorie=$data['calorie'];
+        $heure=floor($calorieproduit/$calorie);
+        $minute= ((($calorieproduit/$calorie)-$heure)*60);
     }
-    ?>
+}
+
+
+
+
+?>
+
+
+
+
 
 
 </body>
