@@ -9,33 +9,24 @@
     <!-- Bootstrap -->
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
     <link href="src/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-            var liste = [
-                "pizzas",
-                "pomme",
-                "chocolats",
-                "produits laitiers"
-            ];
-            $( "#categorie" ).autocomplete({
-                source: liste
-            });
-        } );
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
 </head>
 
 <body>
 
+<?php
+include 'src/navbar.php'
 
-<form class="form-inline" method="POST" action="produits.php">
-    <div class="form-group">
-        <label for="nom">Catégorie d'aliments</label>
-        <input type="text" class="form-control" value="" id="categorie" name="categorie">
+?>
+
+<form class="form-inline produit" method="POST" action="produits.php">
+        <div class="form-group">
+        <label for="nom" class="nom"></label>
+        <input type="text" class="form-control" value="" id="categorie" name="categorie" placeholder="Catégorie">
 
     </div>
-    <input type="submit" name="btnSubmit" value="Chercher" class="btn btn-default"> </input>
+    <input type="submit" name="btnSubmit" value="Chercher" class="btn btn-default" href="produits.php"> </input>
 </form>
 
 <?php
@@ -75,6 +66,7 @@ if (isset($_POST['btnSubmit'])){
                                       <p>Calories :' . $energie . '<br/> Score nutritionnel :' . $nutri_score . '</p>
                                       <a class="btn btn-warning" href="sport.php?id='.$id.'">Choisir</a>
                                  </div>
+                                 <input type="btn" name="btn" value="Choisir" class="btn btn-default" href="#"> </input>
                             </div>
                         </div>';
         }
@@ -84,6 +76,11 @@ if (isset($_POST['btnSubmit'])){
 
 }
 ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 
 </body>
 
