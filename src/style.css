@@ -1,0 +1,69 @@
+
+
+body{
+	background-image: url("img/bg.jpg");
+
+}
+.titre{
+    color: white;
+    font-size: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+.about{
+    text-align: justify;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    line-height: 1.8;
+    padding: 20px;
+    margin-top: 70px;
+}
+.nous {
+    color: white;
+    font-size: 100px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.navbar.navbar-default.navbar-fixed-top{
+    background: transparent;
+    border: none;
+    font-size: x-large;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+form.form-inline{
+    text-align: center;
+    margin-top: 450px;
+    font-family: 'Roboto Slab', serif;
+}
+form.form-inline.produit{
+    margin-top: 150px;
+}
+.nom{
+    color: white;
+    font-size: x-large;
+}
+.thumbnail.text-center.taille {
+height: 400px;
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #999; background: #FFF; overflow: auto;
+}
+.autocomplete-suggestion {
+    padding: 2px 5px; white-space: nowrap; overflow: hidden;
+}
+.autocomplete-selected {
+    background: #F0F0F0;
+}
+.autocomplete-suggestions strong {
+    font-weight: normal; color: #3399FF;
+}
