@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6498bac-e125-468b-952b-d1d6af3bc5b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autocompletion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sport.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requetesport.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sport.php" afterPath="$PROJECT_DIR$/sport.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,48 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sport.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sport.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="29" column="58" lean-forward="false" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-              <folding>
-                <marker date="1490300553385" expanded="true" signature="675:869" ph="..." />
-                <marker date="1490300553385" expanded="true" signature="884:1919" ph="..." />
-                <marker date="1490300553385" expanded="true" signature="1410:1440" ph="SELECT sport... energiesport" />
-                <marker date="1490300553385" expanded="true" signature="1410:1481" ph="SELECT sport... energiesport" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulaire.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Newsletter/formulaire.php">
+      <file leaf-file-name="requetesport.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requetesport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
-                <marker date="1489135014869" expanded="true" signature="184:1294" ph="..." />
-                <marker date="1489135014869" expanded="true" signature="229:403" ph="..." />
-                <marker date="1489135014869" expanded="true" signature="454:640" ph="..." />
-                <marker date="1489135014869" expanded="true" signature="691:908" ph="..." />
-                <marker date="1489135014869" expanded="true" signature="959:1155" ph="..." />
-                <marker date="1489135014869" expanded="true" signature="1532:1644" ph="INSERT INTO abonnes... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminabonnes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Newsletter/adminabonnes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding>
-                <marker date="1489072071064" expanded="true" signature="310:762" ph="..." />
-                <marker date="1489072071064" expanded="true" signature="351:762" ph="..." />
-                <marker date="1489072071064" expanded="true" signature="407:762" ph="..." />
-                <marker date="1489072071064" expanded="true" signature="436:762" ph="..." />
+                <marker date="1490304344401" expanded="true" signature="255:326" ph="SELECT sport... energiesport" />
               </folding>
             </state>
           </provider>
@@ -120,7 +94,9 @@
         <option value="$PROJECT_DIR$/jquery.autocomplete.min.js" />
         <option value="$PROJECT_DIR$/autocompletion.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/autocomplete.js" />
         <option value="$PROJECT_DIR$/sport.php" />
+        <option value="$PROJECT_DIR$/requetesport.php" />
       </list>
     </option>
   </component>
@@ -152,6 +128,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,8 +144,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,18 +222,19 @@
       <option name="presentableId" value="Default" />
       <updated>1490279680884</updated>
       <workItem from="1490279682184" duration="7344000" />
-      <workItem from="1490290882324" duration="10272000" />
+      <workItem from="1490290882324" duration="10978000" />
+      <workItem from="1490336677240" duration="235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17616000" />
+    <option name="totallyTimeSpent" value="18557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="455" y="61" width="1266" height="1011" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25862068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -287,11 +264,88 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resultat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requetesport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490304344401" expanded="true" signature="255:326" ph="SELECT sport... energiesport" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Newsletter/formulaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <marker date="1489135014869" expanded="true" signature="184:1294" ph="..." />
+            <marker date="1489135014869" expanded="true" signature="229:403" ph="..." />
+            <marker date="1489135014869" expanded="true" signature="454:640" ph="..." />
+            <marker date="1489135014869" expanded="true" signature="691:908" ph="..." />
+            <marker date="1489135014869" expanded="true" signature="959:1155" ph="..." />
+            <marker date="1489135014869" expanded="true" signature="1532:1644" ph="INSERT INTO abonnes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Newsletter/adminabonnes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <marker date="1489072071064" expanded="true" signature="310:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="351:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="407:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="436:762" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Newsletter/jquery.autocomplete.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="12949" lean-forward="false" selection-start-line="7" selection-start-column="12949" selection-end-line="7" selection-end-column="12949" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -315,18 +369,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fomulairesport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fomulairesport.php" />
     <entry file="file://$PROJECT_DIR$/../orleans-0217-hoppophop/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -338,7 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -358,19 +403,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fomulairesport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fomulairesport.php" />
     <entry file="file://$PROJECT_DIR$/../Newsletter/jquery.autocomplete.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -378,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -396,7 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -404,18 +439,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.autocomplete.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.autocomplete.min.js" />
     <entry file="file://$PROJECT_DIR$/resultat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -432,10 +459,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/sport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -450,6 +485,14 @@
             <marker date="1489072071064" expanded="true" signature="407:762" ph="..." />
             <marker date="1489072071064" expanded="true" signature="436:762" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -468,15 +511,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sport.php">
+    <entry file="file://$PROJECT_DIR$/requetesport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="29" column="58" lean-forward="false" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        <state relative-caret-position="270">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
-            <marker date="1490300553385" expanded="true" signature="675:869" ph="..." />
-            <marker date="1490300553385" expanded="true" signature="884:1919" ph="..." />
-            <marker date="1490300553385" expanded="true" signature="1410:1440" ph="SELECT sport... energiesport" />
-            <marker date="1490300553385" expanded="true" signature="1410:1481" ph="SELECT sport... energiesport" />
+            <marker date="1490304344401" expanded="true" signature="255:326" ph="SELECT sport... energiesport" />
           </folding>
         </state>
       </provider>
