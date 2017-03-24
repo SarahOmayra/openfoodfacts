@@ -37,7 +37,7 @@ echo '<form class="form-inline" method="POST" action="sport.php?id=' . $id . '">
 
 define("SERVER","localhost");
 define("USER","root");
-define("PASS","gTQD2m11");
+define("PASS","azerty1234");
 define("DB","sports");
 
 $bdd = mysqli_connect(SERVER, USER, PASS, DB);
@@ -47,6 +47,26 @@ $bdd = mysqli_connect(SERVER, USER, PASS, DB);
     $json = json_decode($recup, true);
    // var_dump($json);
     $product = $json['product'];
+
+
+    switch ($product['nutrition_grade_fr']){
+        case 'a':
+            $product['nutrition_grade_fr']='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-a.svg"/>';
+            break;
+        case 'b' :
+            $product['nutrition_grade_fr']='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-b.svg"/>';
+            break;
+        case 'c' :
+            $product['nutrition_grade_fr']='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-c.svg"/>';
+            break;
+        case 'd' :
+            $product['nutrition_grade_fr']='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-d.svg"/>';
+            break;
+        case 'e' :
+            $product['nutrition_grade_fr']='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-e.svg"/>';
+            break;
+
+    }
 
 
     echo '
@@ -59,7 +79,7 @@ $bdd = mysqli_connect(SERVER, USER, PASS, DB);
                                       <h2>' . $product['product_name'] . '</h2>
                                       <img src = "' . $product['image_front_thumb_url'] . '"/>';
                                       if (isset($product['nutrition_grade_fr'])) {
-                                                echo '<p>Calories :'. $product['nutriments']['energy_value'] . '<br/> Score nutritionnel :' . $product['nutrition_grade_fr'] . '</p>';
+                                                echo '<p>Calories :'. $product['nutriments']['energy_value'] . '<br/> ' . $product['nutrition_grade_fr'] . '</p>';
                                             }
                                                 else {
                                                     echo '<p>Calories :'. $product['nutriments']['energy_value']. '</p>';

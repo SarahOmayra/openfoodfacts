@@ -31,6 +31,8 @@ include 'src/navbar.php'
 
 <?php
 
+
+
 if (isset($_POST['btnSubmit'])){
 
     $requete=$_POST['categorie'];
@@ -52,11 +54,32 @@ if (isset($_POST['btnSubmit'])){
             $nutri_score = '';
             if (isset($produit_categorie['nutrition_grade_fr'])) {
                 $nutri_score = $produit_categorie['nutrition_grade_fr'];
+
+                switch ($nutri_score){
+                    case 'a':
+                        $nutri_score='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-a.svg"/>';
+                        break;
+                    case 'b' :
+                        $nutri_score='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-b.svg"/>';
+                        break;
+                    case 'c' :
+                        $nutri_score='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-c.svg"/>';
+                        break;
+                    case 'd' :
+                        $nutri_score='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-d.svg"/>';
+                        break;
+                    case 'e' :
+                        $nutri_score='<img class="nutriscore" src="https://static.openfoodfacts.org/images/misc/nutriscore-e.svg"/>';
+                        break;
+
+                }
             }
             $energie = 'pas de données';
             if (isset($produit_categorie['nutriments']['energy_value'])) {
                 $energie = $produit_categorie['nutriments']['energy_value'];
             }
+
+
             echo '
                 
                                              
@@ -66,7 +89,7 @@ if (isset($_POST['btnSubmit'])){
                                  <div class="caption aliments">
                                       <h2>' . $nom . '</h2>
                                       <img src = "' . $image . '"/>
-                                      <p>Calories :' . $energie . '<br/> Score nutritionnel :' . $nutri_score . '</p>
+                                      <p>Calories :' . $energie . '<br/>'. $nutri_score . '</p>
                                       <a class="btn btn-warning" href="sport.php?id='.$id.'">Choisir</a>
                                  </div>
                             </div>
