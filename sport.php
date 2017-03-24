@@ -105,7 +105,7 @@ $bdd = mysqli_connect(SERVER, USER, PASS, DB);
             $heure = floor($calorieproduit / $calorie);
             $minute = ((($calorieproduit / $calorie)-$heure) * 60);
         }
-        echo '<div class="resultat"><h3>Vous devez bouger pendant '.$heure.'h et '.round($minute).' min !</h3></div>';
+        echo '<div class="resultat"><h3>Vous devez bouger pendant '.$heure.'h et '.round($minute).' min !</h3><iframe src="//giphy.com/embed/MwOuiiTfWfWgM" width="400" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/MwOuiiTfWfWgM">via GIPHY</a></p></div>';
     }
 
 

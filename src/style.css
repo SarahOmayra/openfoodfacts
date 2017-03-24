@@ -7,7 +7,11 @@ h3{
     font-weight: bold;
     font-size: xx-large;
     color: white;
-    margin-right: 75px;
+    margin-right: 290px;
+    text-align: center;
+}
+iframe{
+    margin-left: 430px;
 }
 
 .titre{
@@ -47,7 +51,7 @@ h3{
 }
 form.form-inline{
     text-align: center;
-    margin-top: 450px;
+    margin-top: 250px;
     font-family: 'Roboto Slab', serif;
 }
 form.form-inline.produit{
