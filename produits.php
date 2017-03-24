@@ -50,8 +50,9 @@ if (isset($_POST['btnSubmit'])){
         $recup = file_get_contents($url);
         $json = json_decode($recup, true);
         $produits_categorie = $json['products'];
-        //var_dump($produits_categorie);
+//        var_dump($produits_categorie);
         foreach ($produits_categorie as $produit_categorie) {
+            $id = $produit_categorie['code'];
             $nom = $produit_categorie['product_name'];
             $image = '';
             if (isset($produit_categorie['image_front_thumb_url'])) {
@@ -72,6 +73,7 @@ if (isset($_POST['btnSubmit'])){
                                       <h2>' . $nom . '</h2>
                                       <img src = "' . $image . '"/>
                                       <p>Calories :' . $energie . '<br/> Score nutritionnel :' . $nutri_score . '</p>
+                                      <a class="btn btn-warning" href="sport.php?id='.$id.'">Choisir</a>
                                  </div>
                             </div>
                         </div>';
