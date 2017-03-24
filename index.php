@@ -33,54 +33,49 @@
     <div class="form-group">
         <label for="nom">Catégorie d'aliments</label>
         <input type="text" class="form-control" value="" id="categorie" name="categorie">
-        <label for="nom">produits</label>
-        <input type="text" class="form-control" value="" id="product" name="product">
-    </div>
+           </div>
     <input type="submit" name="btnSubmit" value="Chercher" class="btn btn-default"> </input>
 </form>
 
 <?php
 
-if (isset($_POST['btnSubmit'])){
+if (isset($_POST['btnSubmit'])) {
 
-    $requete=$_POST['categorie'];
-    $requete_produit=$_POST['product'];
+    $requete = $_POST['categorie'];
+    $requete_produit = $_POST['product'];
 
-    $url='https://fr.openfoodfacts.org/categorie/'.$requete.'.json';
-    $recup=file_get_contents($url);
-    $json=json_decode($recup,true);
-    $produits_categorie=$json['products'];
-    //var_dump($produits_categorie);
-    foreach ($produits_categorie as $produit_categorie){
-        $nom=$produit_categorie['product_name'];
-        $image ='';
-        if (isset($produit_categorie['image_front_thumb_url'])) {
-            $image = $produit_categorie['image_front_thumb_url'];
+    for ($i = 1; $i < 5; $i++) {
+        $url = 'https://fr.openfoodfacts.org/categorie/' . $requete . '/$i.json';
+        $recup = file_get_contents($url);
+        $json = json_decode($recup, true);
+        $produits_categorie = $json['products'];
+//    var_dump($produits_categorie);
+        foreach ($produits_categorie as $produit_categorie) {
+            $nom = $produit_categorie['product_name'];
+
+            $image = '';
+            if (isset($produit_categorie['image_front_thumb_url'])) {
+                $image = $produit_categorie['image_front_thumb_url'];
+            }
+            $nutri_score = '';
+            if (isset ($produit_categorie['nutrition_grade_fr'])) {
+                $nutri_score = $produit_categorie['nutrition_grade_fr'];
+            }
+            $energie = 'pas de données';
+            if (isset($produit_categorie['nutriments']['energy_value'])) {
+                $energie = $produit_categorie['nutriments']['energy_value'];
+            }
+
+            echo $nom;
+            echo $image . '<br/>';
+            echo $energie . '<br/>';
+            echo $nutri_score . '<br/>';
         }
-        $nutri_score=$produit_categorie['nutrition_grade_fr'];
-        $energie = 'pas de données';
-        if (isset($produit_categorie['nutriments']['energy_value'])) {
-            $energie = $produit_categorie['nutriments']['energy_value'];
-        }
-        echo $nom;
-        echo $image.'<br/>';
-        echo $energie.'<br/>';
-        echo $nutri_score.'<br/>';
+
     }
 
-//    $urlp='https://fr.openfoodfacts.org/cgi/search.pl?search_terms='.$requete_produit.'&search_simple=1&action=process&json=1';
-  //  $recupp=file_get_contents($urlp);
-    //$jsonp=json_decode($recupp,true);
-
- //   var_dump($json);
- //     var_dump($jsonp);
-
-
 }
-?>
-
-</body>
 
 
-</html>
+
 
