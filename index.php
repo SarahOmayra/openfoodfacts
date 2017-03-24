@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Site qui rend dépressif/ve</title>
+    <title>Manger-Bouger</title>
     <!-- Bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@ if (isset($_POST['btnSubmit'])) {
     $requete = $_POST['categorie'];
     $requete_produit = $_POST['product'];
 
-    for ($i = 1; $i < 5; $i++) {
+    for ($i = 1; $i < 3; $i++) {
         $url = 'https://fr.openfoodfacts.org/categorie/' . $requete . '/$i.json';
         $recup = file_get_contents($url);
         $json = json_decode($recup, true);

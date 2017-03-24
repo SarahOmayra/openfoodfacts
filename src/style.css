@@ -2,8 +2,14 @@
 /* page accueil*/
 body{
 	background-image: url("img/bg.jpg");
-
 }
+h3{
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+    margin-right: 75px;
+}
+
 .titre{
     color: white;
     font-size: 100px;

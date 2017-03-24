@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site qui rend dépressif/ve</title>
+    <title>Manger-Bouger</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/style.css" rel="stylesheet">
@@ -14,30 +14,40 @@
 </head>
 
 <body>
+
 <?php
-include 'src/navbar.php'
+include 'src/navbar.php';
+$id='';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+echo '<form class="form-inline" method="POST" action="sport.php?id=' . $id . '">';
 ?>
 
-<form class="form-inline" method="POST" action="sport.php">
     <h2 class="titre">Choisissez votre sport</h2>
     <div class="form-group">
         <label for="sport"></label>
-        <input type="text" class="form-control" value="" id="categorie" name="categorie">
+        <input type="text" class="form-control" value="" id="sport" name="sport">
     </div>
     <input type="submit" value="Calcul" class="btn btn-primary btn-lg"/></input>
 </form>
 
-<body>
 
 <?php
 
-$bdd = new PDO('mysql:host=localhost;dbname=sports', 'root', 'gTQD2m11');
-if (empty($_POST)){
-    $codebarre=$_GET['id'];
+define("SERVER","localhost");
+define("USER","root");
+define("PASS","gTQD2m11");
+define("DB","sports");
+
+$bdd = mysqli_connect(SERVER, USER, PASS, DB);
+    $codebarre=$id;
     $url = 'https://fr.openfoodfacts.org/api/v0/product/'.$codebarre.'.json';
     $recup = file_get_contents($url);
     $json = json_decode($recup, true);
+   // var_dump($json);
     $product = $json['product'];
+
 
     echo '
                 
@@ -47,26 +57,35 @@ if (empty($_POST)){
                                                                     
                                  <div class="caption aliments">
                                       <h2>' . $product['product_name'] . '</h2>
-                                      <img src = "' . $product['image_front_thumb_url'] . '"/>
-                                      <p>Calories :' . $product['nutriments']['energy_value'] . '<br/> Score nutritionnel :' . $product['nutrition_grade_fr'] . '</p>
+                                      <img src = "' . $product['image_front_thumb_url'] . '"/>';
+                                      if (isset($product['nutrition_grade_fr'])) {
+                                                echo '<p>Calories :'. $product['nutriments']['energy_value'] . '<br/> Score nutritionnel :' . $product['nutrition_grade_fr'] . '</p>';
+                                            }
+                                                else {
+                                                    echo '<p>Calories :'. $product['nutriments']['energy_value']. '</p>';
+                                                }
+?>
+                                        
                                  </div>
                             </div>
                         </div>';
+<?php
 
 
-}
 //$calorieproduit=$product['nutriments']['energy_value'];
 
-    if (isset($_POST['categorie'])) {
-        $sport=$_POST['categorie'];
-        $req="SELECT energie FROM energiesport where sport=".$_POST['categorie'];
-        $res = $bdd -> query($req);
-        var_dump($res);
-        while($data = $res -> fetch(PDO::FETCH_ASSOC)) {
+    if (isset($_POST['sport'])) {
+        $req="SELECT energie FROM energiesport WHERE sport='".$_POST['sport']."'";
+        $res = mysqli_query($bdd, $req);
+        $calorieproduit=$product['nutriments']['energy_value'];
+       // var_dump($product);
+
+        while($data = mysqli_fetch_assoc($res)) {
             $calorie = $data['energie'];
             $heure = floor($calorieproduit / $calorie);
-            $minute = ((($calorieproduit / $calorie) - $heure) * 60);
+            $minute = ((($calorieproduit / $calorie)-$heure) * 60);
         }
+        echo '<div class="resultat"><h3>Vous devez bouger pendant '.$heure.'h et '.round($minute).' min !</h3></div>';
     }
 
 
@@ -80,13 +99,12 @@ if (empty($_POST)){
 <script type="text/javascript" src="src/jquery.autocomplete.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('#categorie').autocomplete({
+        $('#sport').autocomplete({
             serviceUrl: 'autocompletesport.php',
             dataType: 'json'
         });
     });</script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 
 
 </body>
