@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6498bac-e125-468b-952b-d1d6af3bc5b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autocomplete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/categorie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classeCategorie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/connect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery.autocomplete.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/produits.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/navbar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autocompletesport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autocomplete.php" afterPath="$PROJECT_DIR$/autocomplete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/produits.php" afterPath="$PROJECT_DIR$/produits.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sport.php" afterPath="$PROJECT_DIR$/sport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jquery.autocomplete.min.js" afterPath="$PROJECT_DIR$/src/jquery.autocomplete.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style.css" afterPath="$PROJECT_DIR$/src/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +27,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="281">
+              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -55,34 +47,91 @@
       <file leaf-file-name="sport.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="486">
+              <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
               <folding>
-                <marker date="1490337012321" expanded="true" signature="2502:2528" ph="SELECT * FRO... energiesport" />
-                <marker date="1490337012321" expanded="true" signature="2974:3028" ph="SELECT calor... energiesport" />
+                <marker date="1490346693369" expanded="true" signature="1325:1977" ph="..." />
+                <marker date="1490346693369" expanded="true" signature="1397:1946" ph="..." />
+                <marker date="1490346693369" expanded="true" signature="1530:1911" ph="..." />
+                <marker date="1490346693369" expanded="true" signature="2132:2177" ph="SELECT energ... energiesport" />
+                <marker date="1490346693369" expanded="true" signature="2132:2178" ph="SELECT energ... energiesport" />
+                <marker date="1490346693369" expanded="true" signature="2132:2180" ph="SELECT energ... energiesport" />
+                <marker date="1490346693369" expanded="true" signature="2132:2215" ph="SELECT energ... energiesport" />
+                <marker date="1490346693369" expanded="true" signature="2743:2755" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requetesport.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requetesport.php">
+      <file leaf-file-name="autocomplete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autocomplete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="285">
+              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <marker date="1490304344401" expanded="true" signature="255:326" ph="SELECT sport... energiesport" />
+                <marker date="1490339319615" expanded="true" signature="374:437" ph="SELECT * FRO... categories" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
+      <file leaf-file-name="modif.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Newsletter/modif.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+              <folding>
+                <marker date="1489076112228" expanded="true" signature="140:317" ph="UPDATE abonn... " />
+                <marker date="1489076112228" expanded="true" signature="429:467" ph="SELECT * FRO... abonnes" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autocompletesport.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autocompletesport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="58" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="21" selection-end-column="58" />
+              <folding>
+                <marker date="1490338223741" expanded="true" signature="374:445" ph="SELECT sport... energiesport" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categorie.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/categorie.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1490336947224" expanded="true" signature="394:448" ph="INSERT INTO categories... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="produits.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produits.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+              <folding>
+                <marker date="1490342272205" expanded="true" signature="2280:2942" ph="..." />
+                <marker date="1490342272205" expanded="true" signature="2352:2911" ph="..." />
+                <marker date="1490342272205" expanded="true" signature="2485:2876" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/style.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/../Newsletter/fomulairesport.php" />
         <option value="$PROJECT_DIR$/fomulairesport.php" />
         <option value="$PROJECT_DIR$/../Newsletter/jquery.autocomplete.min.js" />
@@ -112,6 +159,12 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/autocomplete.js" />
         <option value="$PROJECT_DIR$/requetesport.php" />
+        <option value="$PROJECT_DIR$/autocompletesport.php" />
+        <option value="$PROJECT_DIR$/src/style.css" />
+        <option value="$PROJECT_DIR$/connect.php" />
+        <option value="$PROJECT_DIR$/autocomplete.php" />
+        <option value="$PROJECT_DIR$/produits.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sport.php" />
       </list>
     </option>
@@ -124,8 +177,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="455" />
-    <option name="y" value="61" />
+    <option name="x" value="490" />
+    <option name="y" value="286" />
     <option name="width" value="1266" />
     <option name="height" value="1011" />
   </component>
@@ -239,15 +292,15 @@
       <updated>1490279680884</updated>
       <workItem from="1490279682184" duration="7344000" />
       <workItem from="1490290882324" duration="10978000" />
-      <workItem from="1490336677240" duration="335000" />
+      <workItem from="1490336677240" duration="9750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18657000" />
+    <option name="totallyTimeSpent" value="28072000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="455" y="61" width="1266" height="1011" extended-state="0" />
+    <frame x="490" y="286" width="1266" height="1011" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25862068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -301,8 +354,14 @@
         <state relative-caret-position="480">
           <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding>
-            <marker date="1490337012321" expanded="true" signature="2502:2528" ph="SELECT * FRO... energiesport" />
-            <marker date="1490337012321" expanded="true" signature="2974:3028" ph="SELECT calor... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="1325:1977" ph="..." />
+            <marker date="1490346693369" expanded="true" signature="1397:1946" ph="..." />
+            <marker date="1490346693369" expanded="true" signature="1530:1911" ph="..." />
+            <marker date="1490346693369" expanded="true" signature="2132:2177" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2132:2178" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2132:2180" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2132:2215" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2743:2755" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -345,10 +404,12 @@
         <state relative-caret-position="375">
           <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
           <folding>
+            <marker date="1489072071064" expanded="true" signature="176:241" ph="SELECT idabo... abonnes" />
             <marker date="1489072071064" expanded="true" signature="310:762" ph="..." />
             <marker date="1489072071064" expanded="true" signature="351:762" ph="..." />
             <marker date="1489072071064" expanded="true" signature="407:762" ph="..." />
             <marker date="1489072071064" expanded="true" signature="436:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="839:1398" ph="..." />
           </folding>
         </state>
       </provider>
@@ -393,13 +454,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fomulairesport.php" />
     <entry file="file://$PROJECT_DIR$/../orleans-0217-hoppophop/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -462,40 +516,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery.autocomplete.min.js" />
-    <entry file="file://$PROJECT_DIR$/resultat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autocomplete.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Newsletter/adminabonnes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <marker date="1489072071064" expanded="true" signature="310:762" ph="..." />
-            <marker date="1489072071064" expanded="true" signature="351:762" ph="..." />
-            <marker date="1489072071064" expanded="true" signature="407:762" ph="..." />
-            <marker date="1489072071064" expanded="true" signature="436:762" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -532,13 +557,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/categorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490336947224" expanded="true" signature="394:448" ph="INSERT INTO categories... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resultat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produits.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <marker date="1490342272205" expanded="true" signature="2280:2942" ph="..." />
+            <marker date="1490342272205" expanded="true" signature="2352:2911" ph="..." />
+            <marker date="1490342272205" expanded="true" signature="2485:2876" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Newsletter/adminabonnes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <marker date="1489072071064" expanded="true" signature="176:241" ph="SELECT idabo... abonnes" />
+            <marker date="1489072071064" expanded="true" signature="310:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="351:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="407:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="436:762" ph="..." />
+            <marker date="1489072071064" expanded="true" signature="839:1398" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Newsletter/modif.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <marker date="1489076112228" expanded="true" signature="140:317" ph="UPDATE abonn... " />
+            <marker date="1489076112228" expanded="true" signature="429:467" ph="SELECT * FRO... abonnes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autocomplete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1490339319615" expanded="true" signature="374:437" ph="SELECT * FRO... categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autocompletesport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="58" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="21" selection-end-column="58" />
+          <folding>
+            <marker date="1490338223741" expanded="true" signature="374:445" ph="SELECT sport... energiesport" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding>
-            <marker date="1490337012321" expanded="true" signature="2502:2528" ph="SELECT * FRO... energiesport" />
-            <marker date="1490337012321" expanded="true" signature="2974:3028" ph="SELECT calor... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="1325:1977" ph="..." />
+            <marker date="1490346693369" expanded="true" signature="1397:1946" ph="..." />
+            <marker date="1490346693369" expanded="true" signature="1530:1911" ph="..." />
+            <marker date="1490346693369" expanded="true" signature="2132:2177" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2132:2178" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2132:2180" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2132:2215" ph="SELECT energ... energiesport" />
+            <marker date="1490346693369" expanded="true" signature="2743:2755" ph="{...}" />
           </folding>
         </state>
       </provider>

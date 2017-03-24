@@ -49,7 +49,10 @@ if (isset($_POST['btnSubmit'])){
             if (isset($produit_categorie['image_front_thumb_url'])) {
                 $image = $produit_categorie['image_front_thumb_url'];
             }
-            $nutri_score = $produit_categorie['nutrition_grade_fr'];
+            $nutri_score = '';
+            if (isset($produit_categorie['nutrition_grade_fr'])) {
+                $nutri_score = $produit_categorie['nutrition_grade_fr'];
+            }
             $energie = 'pas de données';
             if (isset($produit_categorie['nutriments']['energy_value'])) {
                 $energie = $produit_categorie['nutriments']['energy_value'];
@@ -66,7 +69,6 @@ if (isset($_POST['btnSubmit'])){
                                       <p>Calories :' . $energie . '<br/> Score nutritionnel :' . $nutri_score . '</p>
                                       <a class="btn btn-warning" href="sport.php?id='.$id.'">Choisir</a>
                                  </div>
-                                 <input type="btn" name="btn" value="Choisir" class="btn btn-default" href="#"> </input>
                             </div>
                         </div>';
         }

@@ -11,7 +11,7 @@ if(isset($_GET['query'])) {
     }
 
     // Requête SQL
-    $requete = "SELECT * FROM categories WHERE nom LIKE '". $q ."%' LIMIT 0, 10";
+    $requete = "SELECT sport FROM energiesport WHERE sport LIKE '". $q ."%' LIMIT 0, 10";
 
     // Exécution de la requête SQL
     $resultat = $bdd->query($requete) or die(print_r($bdd->errorInfo()));
@@ -19,7 +19,7 @@ if(isset($_GET['query'])) {
     // On parcourt les résultats de la requête SQL
     while($donnees = $resultat->fetch(PDO::FETCH_ASSOC)) {
         // On ajoute les données dans un tableau
-        $suggestions['suggestions'][] = $donnees['nom'];
+        $suggestions['suggestions'][] = $donnees['sport'];
     }
 
     // On renvoie le données au format JSON pour le plugin
