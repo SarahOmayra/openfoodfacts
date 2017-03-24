@@ -7,9 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Site qui rend dépressif/ve</title>
     <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
 
 
 </head>
@@ -73,7 +74,15 @@ if (isset($_POST['btnSubmit'])) {
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="src/jquery.autocomplete.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#categorie').autocomplete({
+            serviceUrl: 'autocomplete.php',
+            dataType: 'json'
+        });
+    });</script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
